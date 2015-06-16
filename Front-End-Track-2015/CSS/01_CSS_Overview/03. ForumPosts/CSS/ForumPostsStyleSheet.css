@@ -1,0 +1,57 @@
+﻿body {
+    background: #a9a9a9;
+    font-size: 12px;
+}
+
+body > header{
+    text-align: center;
+}
+
+header > h1{
+    color: #fafad1;
+    font-size: 3.2em;
+}
+
+header ul{
+    list-style-type: none;
+    font-size: 2em;
+}
+
+header ul li a:link{
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:visited{
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+header ul li a:hover{
+    background-color: #d3d3d3;
+}
+
+header ul li a:active{
+    color: #4cff00;
+}
+
+section article header h1{
+    font-size: 2.3em;
+}
+/*makes last nav a link underline*/
+header nav ul li:last-child a:link {
+    text-decoration: underline;
+}
+
+article > p {
+    font-size: 1.5em;
+}
+
+article footer > p{
+    font-size: 1.2em;
+}
+
+body > footer{
+    text-align: center;
+    font-size: 1.5em;
+}

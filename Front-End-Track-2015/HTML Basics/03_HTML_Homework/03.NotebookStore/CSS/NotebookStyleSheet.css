@@ -1,0 +1,60 @@
+﻿body {
+}
+
+table.rounded{
+    width:75%;
+    border-radius:7px;
+    border:solid;
+    border-width:2px;
+}
+
+td.h1{
+    text-align:center;
+    font-size:26px;
+}
+
+td.h1 a:link{
+    color:#04cefb;
+}
+
+td.h1 a:visited{
+    color:darkblue;
+}
+
+td.h1 a:hover{
+    color:blueviolet;
+}
+
+td.h1 a:active{
+    color:oldlace;
+}
+
+td.desc{
+    text-align:center;
+    font-family:'Comic Sans MS';
+    font-size:20px;
+}
+
+legend{
+    font-size:20px;
+    font-family:'Arial'
+}
+
+table.no-inside-border{
+    float:left;
+    border:solid;
+    border-width:2px;
+    border-collapse:collapse;
+    width:70%;
+}
+
+table.sliders{
+    font-family:'Comic Sans MS';
+    text-align:center;
+    font-size:22px;
+    margin-top:80px;
+}
+
+input{
+    width:90%;
+}

@@ -1,0 +1,127 @@
+﻿body div#wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+body div#wrapper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper div#gallery {
+  width: 650px;
+  margin: 0 auto;
+}
+body div#wrapper div#zoomed {
+  width: 650px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+body div#wrapper label[for=rad1] {
+  background: url('../images/Mercedes GLA.jpg') no-repeat 0 0;
+  width: 80px;
+  height: 78px;
+  display: inline-block;
+  margin: 10px;
+  background-size: 80px 78px;
+}
+body div#wrapper label[for=rad2] {
+  background: url(../images/overland-grand-cherokee.jpg) no-repeat 0 0;
+  width: 80px;
+  height: 78px;
+  display: inline-block;
+  margin: 10px;
+  background-size: 80px 78px;
+}
+body div#wrapper label[for=rad3] {
+  background: url(../images/wald-international-toyota-land-cruiser-001_100197542_m.jpg) no-repeat 0 0;
+  width: 80px;
+  height: 78px;
+  display: inline-block;
+  margin: 10px;
+  background-size: 80px 78px;
+}
+body div#wrapper label[for=rad4] {
+  background: url(../images/2013-Volkswagen-Touareg-SUV_Image-013.jpg) no-repeat 0 0;
+  width: 80px;
+  height: 78px;
+  display: inline-block;
+  margin: 10px;
+  background-size: 80px 78px;
+}
+body div#wrapper label[for=rad5] {
+  background: url(../images/q7.jpg) no-repeat 0 0;
+  width: 80px;
+  height: 78px;
+  display: inline-block;
+  margin: 10px;
+  background-size: 80px 78px;
+}
+body div#wrapper label[for=rad6] {
+  background: url(../images/2015-opel-mokka-01.jpg) no-repeat 0 0;
+  width: 80px;
+  height: 78px;
+  display: inline-block;
+  margin: 10px;
+  background-size: 80px 78px;
+}
+body div#wrapper input[type=radio] {
+  width: 600px;
+  height: 400px;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+}
+body div#wrapper input[type=radio]:checked {
+  visibility: visible;
+  z-index: 0;
+}
+body div#wrapper input[type=radio]#rad1:checked::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url('../images/Mercedes GLA.jpg') no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body div#wrapper input[type=radio]#rad2:checked::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/overland-grand-cherokee.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body div#wrapper input[type=radio]#rad3:checked::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/wald-international-toyota-land-cruiser-001_100197542_m.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body div#wrapper input[type=radio]#rad4:checked::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/2013-Volkswagen-Touareg-SUV_Image-013.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body div#wrapper input[type=radio]#rad5:checked::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/q7.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+body div#wrapper input[type=radio]#rad6:checked::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/2015-opel-mokka-01.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+/*# sourceMappingURL=WebGallery.css.map */

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 5. Laptop store</title>
+    <meta charset="utf-8" />
+    <link href="CSS/LaptopStoreStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#apple">Apple</a>
+                    </li>
+                    <li>
+                        <a href="#toshiba">Toshiba</a>
+                    </li>
+                    <li>
+                        <a href="#lenovo">Lenovo</a>
+                    </li>
+                    <li>
+                        <a href="#dell">Dell</a>
+                    </li>
+                    <li>
+                        <a href="#asus">Asus</a>
+                    </li>
+                    <li>
+                        <a href="#hacer">Hacer</a>
+                    </li>
+                    <li>
+                        <a href="#hp">HP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form method="post" action="action.aspx">
+                <section id="spec" class="float-left">
+                    <fieldset class="float-left">
+                        <legend>
+                            Apple MacBook Air
+                        </legend>
+                        <div id="content">
+                            <div class="float-left">
+                                <div id="hardDisc">64GB SSD</div>
+                                <div id="ram">2GB DDR</div>
+                            </div>
+                            <div>
+                                <div class="clearfix">
+                                    <div class="float-left" id="price">1300USD</div>
+                                    <div class="float-right" id="prossesor">Intel Core i5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="float-left">
+                        <legend>
+                            Apple MacBook Air
+                        </legend>
+                        <div id="content">
+                            <div class="float-left">
+                                <div id="hardDisc">64GB SSD</div>
+                                <div id="ram">2GB DDR</div>
+                            </div>
+                            <div>
+                                <div class="clearfix">
+                                    <div class="float-left" id="price">1300USD</div>
+                                    <div class="float-right" id="prossesor">Intel Core i5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="float-left">
+                        <legend>
+                            Apple MacBook Air
+                        </legend>
+                        <div id="content">
+                            <div class="float-left">
+                                <div id="hardDisc">64GB SSD</div>
+                                <div id="ram">2GB DDR</div>
+                            </div>
+                            <div>
+                                <div class="clearfix">
+                                    <div class="float-left" id="price">1300USD</div>
+                                    <div class="float-right" id="prossesor">Intel Core i5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="float-left">
+                        <legend>
+                            Apple MacBook Air
+                        </legend>
+                        <div id="content">
+                            <div class="float-left">
+                                <div id="hardDisc">64GB SSD</div>
+                                <div id="ram">2GB DDR</div>
+                            </div>
+                            <div>
+                                <div class="clearfix">
+                                    <div class="float-left" id="price">1300USD</div>
+                                    <div class="float-right" id="prossesor">Intel Core i5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="float-left">
+                        <legend>
+                            Apple MacBook Air
+                        </legend>
+                        <div id="content">
+                            <div class="float-left">
+                                <div id="hardDisc">64GB SSD</div>
+                                <div id="ram">2GB DDR</div>
+                            </div>
+                            <div>
+                                <div class="clearfix">
+                                    <div class="float-left" id="price">1300USD</div>
+                                    <div class="float-right" id="prossesor">Intel Core i5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="float-left">
+                        <legend>
+                            Apple MacBook Air
+                        </legend>
+                        <div id="content">
+                            <div class="float-left">
+                                <div id="hardDisc">64GB SSD</div>
+                                <div id="ram">2GB DDR</div>
+                            </div>
+                            <div>
+                                <div class="clearfix">
+                                    <div class="float-left" id="price">1300USD</div>
+                                    <div class="float-right" id="prossesor">Intel Core i5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="float-right">
+                    <div id="sliderContainer">
+                        <div id="minPrice">Min price: </div>
+                        <output name="minPriceValue">500</output>
+                        <input type="range" class="range" id="minPriceRange" min="0" max="1000" step="100"
+                               oninput="minPriceValue.value = this.value" />
+
+                        <div id="maxPrice">Max price: </div>
+                        <output name="maxPriceValue">1500</output>
+                        <input type="range" class="range" id="maxPriceRange" min="0" max="3000" step="100"
+                               oninput="maxPriceValue.value = this.value" />
+
+                        <div id="minRam">Min RAM: </div>
+                        <output name="minRam">4</output>
+                        <input type="range" class="range" id="minRamRange" min="0" max="8" step="1"
+                               oninput="minRam.value = this.value" />
+
+                        <div id="maxRam">Max RAM: </div>
+                        <output name="maxRam">16</output>
+                        <input type="range" class="range" id="maxRamRange" min="0" max="32" step="1"
+                               oninput="maxRam.value = this.value" />
+                    </div>
+                </section>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿body {
+}
+
+#wrapper
+{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.simple-nav{
+    text-align:center;
+}
+
+.simple-nav > a{
+    padding:2em;
+    
+}
+
+.profilePicture{
+    width:150px;
+}
+
+#profileDesc
+{
+    margin-top:10px;
+    margin-left:0;
+}
+
+#additiona-info{
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.add-info{
+    font-style:italic;
+    margin-bottom:10px;
+
+}

@@ -1,0 +1,166 @@
+﻿body {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+body, section, header, form, fieldset, p, h1, h2, h3, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0px;
+}
+
+.clearRight {
+    clear: right;
+}
+
+.clearLeft {
+    clear: left;
+}
+
+div#wrapper {
+    width: 1064px;
+    height: 775px;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+
+    div#wrapper header {
+        border-bottom: 3px solid #000;
+        margin: 0 auto;
+        width: 996px;
+        height: 51px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+header nav ul li a {
+    color: #00aef0;
+}
+
+div#wrapper header nav {
+    margin-top: 16px;
+    margin-left: 2px;
+}
+
+header nav ul {
+    list-style-type: none;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+    header nav ul li {
+        display: inline-block;
+    }
+
+main form section#spec {
+    padding-right: 13px;
+    padding-bottom: 21px;
+    width: 675px;
+    height: 649px;
+    border: 3px solid #000;
+    margin: 14px 0px 0px 16px;
+}
+
+section#spec fieldset {
+    border: 3px solid #000;
+    width: 323px;
+    margin-left: 7px;
+    margin-top: 6px;
+    height: 205px;
+}
+
+    section#spec fieldset legend {
+        font-size: 27px;
+        text-align: center;
+    }
+
+fieldset > div#content::before {
+    background: url(../Images/macBook.png) no-repeat;
+    content: "";
+    width: 175px;
+    height: 107px;
+    margin: 4px;
+    float: left;
+    position: relative;
+}
+
+fieldset div div {
+    font-size: 23px;
+}
+
+#hardDisc {
+    margin-top: 42px;
+}
+
+#ram {
+    margin-top: 22px;
+}
+
+#price {
+    margin-top: 23px;
+    margin-left: 45px;
+}
+
+#prossesor {
+    margin-top: 24px;
+    margin-right: 18px;
+}
+
+#sliderContainer {
+    width: 335px;
+    height: 687px;
+}
+
+section.float-right {
+    font-size: 31px;
+}
+
+#minPriceValue {
+    margin-left: 30px;
+}
+
+div#sliderContainer div {
+    display: inline-block;
+}
+
+    div#sliderContainer div#minPrice {
+        margin-top: 113px;
+        margin-left: 8px;
+    }
+
+.range {
+    width: 266px;
+    height: 79px;
+    margin: 0px 0px 13px 19px;
+}
+
+output {
+    display: inline-block;
+}
+
+    output::after {
+        content: " USD";
+    }
+
+div#minRam + output::after {
+    content: " GB";
+}
+
+div#maxRam + output::after {
+    content: " GB";
+}

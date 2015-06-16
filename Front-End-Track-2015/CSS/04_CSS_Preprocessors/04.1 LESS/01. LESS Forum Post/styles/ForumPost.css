@@ -1,0 +1,132 @@
+﻿body,
+header,
+nav,
+ul,
+li,
+form,
+section,
+article,
+aside {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+  font-size: 14px;
+  color: #ffffff;
+  height: 100%;
+  background: #9215f2;
+  background: -moz-linear-gradient(top, #c894f2 0%, #9215f2 15%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c894f2), color-stop(15%, #9215f2));
+  background: -webkit-linear-gradient(top, #c894f2 0%, #9215f2 15%);
+  background: -o-linear-gradient(top, #c894f2 0%, #9215f2 15%);
+  background: -ms-linear-gradient(top, #c894f2 0%, #9215f2 15%);
+  background: linear-gradient(to bottom, #c894f2 0%, #9215f2 15%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c894f2', endColorstr='#9215f2', GradientType=0);
+  background-repeat: no-repeat;
+}
+body div#wrapper a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body div#wrapper ul {
+  list-style-type: none;
+}
+body div#wrapper header div#header-container {
+  position: relative;
+}
+body div#wrapper header div#logo-container {
+  display: inline-block;
+}
+body div#wrapper header div#reg-form-container {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+body div#wrapper header div#reg-form-container input {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  background-color: #b35ef3;
+  margin: 10px 0 0 10px;
+}
+body div#wrapper header div#reg-form-container button {
+  padding: 5px 10px;
+  color: #ffffff;
+  border: 1px;
+  border-style: outset;
+  border-radius: 10px;
+  background-color: rgba(200, 148, 242, 0.7);
+}
+body div#wrapper header nav {
+  margin-left: 50px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  width: 65%;
+}
+body div#wrapper header nav > ul {
+  font-size: 1.2em;
+}
+body div#wrapper header nav > ul > li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+body div#wrapper header nav > ul > li > ul {
+  width: 160px;
+  font-size: 14px;
+  background-color: #c389cc;
+  position: absolute;
+  display: none;
+}
+body div#wrapper header nav > ul > li > ul > li {
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid #fff;
+}
+body div#wrapper header nav > ul > li > ul > li:last-of-type {
+  border: none;
+}
+body div#wrapper header nav > ul > li:hover ul {
+  display: block;
+}
+body div#wrapper section#article-container {
+  width: 65%;
+  margin: 20px 50px 0 30px;
+}
+body div#wrapper section#article-container article {
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+body div#wrapper section#article-container article a {
+  color: #eee;
+}
+body div#wrapper aside {
+  float: right;
+  width: 25%;
+  margin: 50px;
+}
+body div#wrapper aside > ul > li {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+body div#wrapper aside > ul > li a {
+  color: #eee;
+}
+body div#wrapper aside > ul > li ul li::before {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90BCA0LNFA4GiMAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAh9JREFUKM9Nkr1rVFEUxH9z733v7Ye7xKwkAfEDrdVaRFG0EPwAG7GwURC08J/RQiwsBFu1EBtBhDRiqREUG8VAiCTGuNnv9+49FqsxpzrFmTkzw4gdc+7CfeY2s0uV52xryIkQadcmfi+WBAKZjXJWSm+/+7neBez18rx/vvjs1jaH/i1XTz54un/dXayXPs/JSGYgwyyB/p6ZITkwcM5RUjJSrL7N8frDwcn5z0/uoitnHi4sbLqP81u+MwWDmZEsIUuYbKcJZMIknDySpuTyrDXj1vfO5EjYNdK9+a7rJCqMSNAustCins0SXJPct6aqmD4qU5cyDhmW61SxR2k9zBJ7+qHVr/nHodO1y4mEcwWd5jFaxT7y0MYs/lWbtnMxQNoHBpKnjD22ht/5OViiin3mN3UqhEhmZuS+RRHaBF/HSEAipYSZ7YwQKeEkDBFcjVo+QzFuUcUeSlL40eHd4dVwfFCusbzxiiLbTSNboJ7tIQttvCsQ/ywnYhxTxj6jco3B5AejagOzROZyVmbi17BZize7jfC+PcxyU2ISu4yrX2z0E6aEYTgCkiPaGOGQCTmP8Dg5nAL9wuLqbHVDAGcu3z9yeCV7Mffb7y8sSIJkU7tJCZm2SyYTTgJNiceqbL0ZVz/ttWuLL28vamclrpx+eDSPut6Y2PnGgANFpUZzovA/Q2OQWxwHhoM6y72avYneniwd4u2XR3cA+AN6iQt1xYT78wAAAABJRU5ErkJggg==') /*../images/li-dot.png*/ no-repeat;
+  content: "";
+  width: 27px;
+  height: 13px;
+  padding: 0 0 0 25px;
+}
+body div#wrapper aside > ul > li ul li {
+  margin: 0 0 10px 20px;
+}
+body div#wrapper footer {
+  text-align: center;
+}
+/*# sourceMappingURL=ForumPost.css.map */

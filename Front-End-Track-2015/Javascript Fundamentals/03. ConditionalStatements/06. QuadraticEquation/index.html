@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="JavaScript-ConsoleStyle.css" rel="stylesheet" />
+    <style>
+        body > input {
+            width: 30px;
+            text-align: right;
+        }
+
+            body > input:last-of-type {
+                text-align:center;
+            }
+    </style>
+</head>
+<body>
+    <input type="text" id="a" placeholder="a" />
+    <span>x<sup>2</sup> + </span>
+    <input type="text" id="b" placeholder="b" />
+    <span>x + </span>
+    <input type="text" id="c" placeholder="c" />
+    <span> = 0</span>
+    <button id="check">Check</button>
+    <div id="js-console"></div>
+    <script src="JavaScript-ConsoleScript.js"></script>
+    <script src="QuadraticEquation.js"></script>
+</body>
+</html>

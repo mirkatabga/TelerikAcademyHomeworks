@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Problem", "01. Problem\01. Problem.csproj", "{A146B077-6563-4281-8B38-9932F83CB2B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Problem", "02. Problem\02. Problem.csproj", "{17A92732-A817-4567-9DE5-A72ACAFB2883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Problem", "03. Problem\03. Problem.csproj", "{1DA3EB31-3314-4785-9513-0928535DF1E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A146B077-6563-4281-8B38-9932F83CB2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A146B077-6563-4281-8B38-9932F83CB2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A146B077-6563-4281-8B38-9932F83CB2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A146B077-6563-4281-8B38-9932F83CB2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A92732-A817-4567-9DE5-A72ACAFB2883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A92732-A817-4567-9DE5-A72ACAFB2883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A92732-A817-4567-9DE5-A72ACAFB2883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A92732-A817-4567-9DE5-A72ACAFB2883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA3EB31-3314-4785-9513-0928535DF1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA3EB31-3314-4785-9513-0928535DF1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA3EB31-3314-4785-9513-0928535DF1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA3EB31-3314-4785-9513-0928535DF1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

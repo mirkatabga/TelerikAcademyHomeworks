@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="JavaScript-ConsoleStyle.css" rel="stylesheet" />
+    <style>
+        .coordinate {
+            width: 30px;
+        }
+
+        body div#lineHolder{
+            float:left;
+        }
+
+        body div#lineHolder > div:nth-of-type(n + 2){
+            margin: 5px 0 0 0;
+        }
+
+        #checkTriangles {
+            width: 70px;
+            height: 70px;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="lineHolder">
+        <div id="lineOneDiv">
+            <label id="lineOneLabel">Line 1:</label>
+            <label>Point One: </label>
+            <label for="pointOneX">x:</label>
+            <input type="number" class="coordinate" />
+
+            <label for="pointOneY">y:</label>
+            <input type="number" class="coordinate" />
+
+            <label>Point Two: </label>
+            <label for="pointTwoX">x:</label>
+            <input type="number" class="coordinate" />
+
+            <label for="pointTwoY">y:</label>
+            <input type="number" class="coordinate" />
+
+            <button id="lineOneBtn">Submit</button>
+        </div>
+
+        <div id="lineTwoDiv">
+            <label id="lineTwoLabel">Line 2:</label>
+            <label>Point One: </label>
+            <label for="pointOneX">x:</label>
+            <input type="number" class="coordinate" />
+
+            <label for="pointOneY">y:</label>
+            <input type="number" class="coordinate" />
+
+            <label>Point Two: </label>
+            <label for="pointTwoX">x:</label>
+            <input type="number" class="coordinate" />
+
+            <label for="pointTwoY">y:</label>
+            <input type="number" class="coordinate" />
+
+            <button id="lineTwoBtn">Submit</button>
+        </div>
+
+        <div id="lineThreeDiv">
+            <label id="lineThreeLabel">Line 3:</label>
+            <label>Point One: </label>
+            <label for="pointOneX">x:</label>
+            <input type="number" class="coordinate" />
+
+            <label for="pointOneY">y:</label>
+            <input type="number" class="coordinate" />
+
+            <label>Point Two: </label>
+            <label for="pointTwoX">x:</label>
+            <input type="number" class="coordinate" />
+
+            <label for="pointTwoY">y:</label>
+            <input type="number" class="coordinate" />
+
+            <button id="lineThreeBtn">Submit</button>
+        </div>
+    </div>
+
+    <div id="btnHolder">
+        <button id="checkTriangles">Triangle?</button>
+    </div>
+
+    <div id="js-console"></div>
+    <script src="PlanerCoordinates.js"></script>
+    <script src="JavaScript-ConsoleScript.js"></script>
+</body>
+</html>

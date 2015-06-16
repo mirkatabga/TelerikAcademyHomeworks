@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body > div#radioHolder{
+            margin: 10px 0 0 0;
+        }
+
+        div#notice{
+            padding:10px,30px;
+            width:30%;
+            border: 1px solid red;
+            color:blue;
+            text-align:center;
+            display:none;
+        }
+
+        body section#articlesHolder span{
+            background-color:#ffd800;
+        } 
+    </style>
+</head>
+<body>
+    <input type="text" id="searchTxt" placeholder="search text" />
+    <button id="searchBtn">Search</button>
+    <div id="radioHolder">
+        <input type="radio" id="caseInsensitive" name="textSensitivity" checked="checked" />
+        <label for="caseInsensitive">Case Insensitive</label>
+        <input type="radio" id="caseSensitive" name="textSensitivity" />
+        <label for="caseSensitive">Case Sensitive</label>
+    </div>
+    <div id="notice"></div>
+    <section id="articlesHolder">
+        <article id="loremIpsum">
+            <header>
+                <h1>Lorem Ipsum</h1>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque nec ipsum id dapibus. Aenean nec efficitur risus, eget tristique erat. Phasellus at dictum justo. Pellentesque et eros purus. Ut convallis pretium arcu, sit amet scelerisque arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris semper augue eros, at volutpat nulla finibus eu. Vestibulum ac tincidunt tortor.
+            </p>
+            <p>
+                Ut et euismod sem. Vivamus et nibh eget purus pharetra consequat. Suspendisse feugiat neque sed nisi rhoncus egestas. Fusce consequat libero id mauris tempor, maximus laoreet justo vulputate. Aenean et viverra elit. Nam lacinia urna risus, a aliquam enim tempus a. Aenean convallis facilisis ipsum, quis hendrerit arcu rhoncus tincidunt. Sed augue lorem, euismod sagittis auctor porta, condimentum et libero. Nunc id ante non nibh blandit sodales. Aenean vulputate leo leo, in tincidunt mauris aliquam eget. Pellentesque vitae dolor scelerisque, elementum purus eget, rhoncus magna.
+            </p>
+            <p>
+                Donec auctor ipsum lectus. Aenean ultricies erat quis magna pulvinar viverra. Aliquam sem urna, blandit id lacus nec, rutrum molestie est. Mauris pellentesque felis tellus, eu pretium eros consequat in. Sed pretium imperdiet pretium. Integer imperdiet at est at rutrum. Integer cursus risus vel purus rhoncus, a tincidunt risus molestie. Nunc ac mauris lobortis, semper lorem sit amet, dapibus ex. Suspendisse tristique ac mauris at viverra. Suspendisse imperdiet, sem eget tincidunt blandit, lectus felis fermentum felis, et ullamcorper justo sem ut turpis. Donec lobortis ante sit amet elementum finibus. Aenean id maximus erat, non volutpat massa. Praesent facilisis, ligula at ullamcorper consectetur, sem velit porttitor velit, ut bibendum urna libero a ipsum. Cras sodales arcu congue, pellentesque eros ut, ornare odio. Sed at varius nibh. Aliquam a laoreet metus.
+            </p>
+            <p>
+                Etiam euismod ipsum in ante commodo, eget eleifend lectus mollis. Duis sodales, elit in commodo finibus, urna risus sodales eros, ac rhoncus purus libero ac orci. Nulla laoreet metus sed velit tempor facilisis. Suspendisse luctus ut orci a volutpat. Cras facilisis, tortor sit amet interdum lacinia, urna ligula consequat purus, nec consectetur orci nisl ut justo. Praesent feugiat mauris nibh, quis pretium orci dapibus eget. Nulla id augue vehicula, eleifend turpis et, rutrum orci. Integer molestie laoreet nulla, laoreet vestibulum tellus efficitur sit amet. Suspendisse tempus et ex id convallis. In et dui sapien. Aliquam congue augue non lacinia euismod. Duis eleifend suscipit felis, eu feugiat arcu posuere eget. In mattis urna vel risus accumsan, a accumsan lectus consectetur. Nullam pulvinar ullamcorper lacus. Donec vitae sollicitudin quam.
+            </p>
+            <p>
+                Fusce gravida semper augue sed iaculis. Donec porttitor rutrum dolor et mattis. Pellentesque aliquet urna lorem, nec cursus lacus sagittis sed. Nullam nibh enim, semper quis leo eget, vulputate commodo ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus lectus massa, varius non ligula sit amet, hendrerit dignissim mi. Morbi quam tortor, pellentesque eu congue porttitor, tristique nec neque. Vivamus justo nibh, accumsan in ultricies et, congue non nisl. Maecenas dapibus, sapien vel suscipit laoreet, est ligula congue ligula, mollis tempor orci mauris id justo. Curabitur ultricies suscipit justo non tristique. Nunc consectetur enim ut pretium auctor.
+            </p>
+        </article>
+    </section>
+    <script src="TextSearch.js"></script>
+</body>
+</html>

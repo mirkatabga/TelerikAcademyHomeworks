@@ -1,0 +1,110 @@
+﻿body{
+    margin: 0;
+}
+
+table.Grid{
+    width:880px;
+    height:393px;
+    font-family:Arial;
+    font-size:12px;
+    font-weight:normal;
+    border:solid 1px #a4abb2;
+    border-radius:8px;
+    border-collapse:separate;
+}
+
+table.Grid thead tr td,
+table.Grid thead tr th{
+    border-bottom:solid 1px #a4abb2;
+    border-right:solid 1px #a4abb2;
+}
+
+/*removes right-border from every last cell*/
+table.Grid tr td:last-child,
+table.Grid tr th:last-child{
+    border-right:none;
+}
+
+table.Grid thead tr:first-child{
+    background-color:#e7e9eb;
+}
+
+#gradient-top-bot{
+    background: linear-gradient(#f1f2f3,#dbdfe4);
+}
+
+table.Grid th{
+    text-align:left;
+    font-weight:normal;
+}
+
+#productID-input{
+    width:20px;
+    margin:0px 0px 5px 5px;
+}
+
+#productName-input{
+    width:140px;
+    margin:0px 0px 5px 5px;
+}
+
+#price-input{
+    width:80px;
+    margin:0px 0px 5px 5px;
+}
+
+#quantity-input{
+    width:90px;
+}
+
+#units-input{
+    width:80px;
+}
+
+table.Grid thead tr:last-child{
+    background-color:#dfe3e8;
+}
+
+table.Grid tbody tr td{
+    border-bottom:solid 1px #d0d7e5;
+    border-right:solid 1px #d0d7e5;
+}
+
+table.Grid tbody tr td:last-child{
+    border-right:none;
+}
+
+table.Grid tbody tr:last-child td{
+    border-bottom:solid 1px #a4abb2;
+}
+
+table.Grid tfoot tr td{
+    padding-left:4px;
+}
+
+table.Grid tfoot input{
+    margin-left:4px;
+}
+
+table.Grid tfoot a:link{
+    padding:2px;
+    color:black;
+    text-decoration:none;
+}
+
+table.Grid tfoot a:visited{
+    padding:2px;
+}
+
+table.Grid tfoot a:hover{
+    padding:2px;
+}
+
+#a-border{
+    border:solid 1px #cb6a1d;
+    border-radius:2px;
+}
+
+table.Grid tfoot{
+    background:linear-gradient(#e4e8ec,#b9bec3);
+}

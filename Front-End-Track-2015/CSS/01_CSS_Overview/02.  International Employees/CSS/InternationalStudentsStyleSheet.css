@@ -1,0 +1,73 @@
+﻿body {
+    font-family:Calibri;
+    font-size:12px;
+    margin:0;
+    padding:0;
+}
+
+table#internationalStudents{
+    width:33.5%;
+    border-spacing:0;
+    border-top: 1px solid #d0cfb7;
+    border-bottom: 1px solid #d0cfb7;
+    border-left: 1px solid #d0cfb7;
+    border-collapse:collapse;
+}
+
+table#internationalStudents thead tr:first-child{
+    background: linear-gradient(#5ec306 , #47a803)
+}
+
+table#internationalStudents th,td{
+    border-spacing:0;
+    padding:0.25em;
+    text-align:left
+}
+
+table#internationalStudents th{
+    color:whitesmoke;
+    font-weight:normal;
+    font-size:1.15em;
+    border-right:1px solid #3b9005;
+    border-bottom:1px solid #3b9005;
+}
+
+table#internationalStudents td{
+    color:black;
+    font-weight:normal;
+    font-size:1.15em;
+    border-right: 1px solid #d5d4c2;
+    border-bottom: 1px solid #d5d4c2;
+}
+
+table#internationalStudents th:first-of-type{
+    width:30%;
+}
+
+table#internationalStudents th:nth-of-type(2){
+    width:24%;
+}
+
+table#internationalStudents th:nth-child(3){
+    width:28%;
+}
+
+/*removes right border from every tr last td or th*/
+table#internationalStudents tbody tr td:last-child{
+    border-right: none;
+}
+
+table#internationalStudents thead tr th:last-child{
+    border-right:none;
+}
+
+/*removes bottom border from tbody last tr in every td element*/
+table#internationalStudents tbody tr:last-child td{
+    border-bottom:none;
+}
+
+
+/*change background color for odd rows*/
+table#internationalStudents tbody tr:nth-child(2n){
+    background: #ececd8;
+}

@@ -1,0 +1,122 @@
+﻿body, section, ul, li, button, p, img {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+    section#musicCategories {
+        width: 409px;
+        height: 524px;
+        padding-left: 12px;
+        padding-top: 14px;
+        background-color: #eee;
+        border-radius:10px;
+    }
+
+        section#musicCategories h1 {
+            font-size: 1.3em;
+            font-weight: normal;
+            letter-spacing: -0.5px;
+            margin-top: 0px;
+            margin-bottom: 36px;
+        }
+
+div.offers {
+    width: 367px;
+    height: 88px;
+    border: 1px solid #000;
+    padding: 15px;
+    margin-top: 36px;
+}
+
+ul li:first-child div.offers {
+    margin-top: initial;
+}
+
+ul li:last-child div.offers {
+    height: 96px;
+    margin-top: 39px;
+}
+
+div.innerOffer {
+    width: 365px;
+    height: 85px;
+}
+
+ul li:last-child div.innerOffer {
+    height: 102px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0px;
+    }
+
+.border {
+    border: 1px solid #000;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img.float-left {
+    margin: 0px 15px 0px 0px;
+}
+
+.offer-text {
+    font-size: 1.1em;
+    letter-spacing: -0.127px;
+}
+
+div.innerOffer input:first-of-type {
+    background: url(../Images/addBtn.png) no-repeat;
+}
+
+div.innerOffer input:last-of-type {
+    background: url(../Images/button.png);
+}
+
+.btnAdd {
+    width: 63px;
+    height: 26px;
+    margin-top: 16px;
+    margin-right: 0px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+input[value=Add] {
+    font-size: 1.0em;
+    color: #fff;
+}
+
+.btnListen {
+    width: 77px;
+    height: 26px;
+    margin-top: 16px;
+    margin-right: 2px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+input[value=Listen] {
+    font-size: 1.0em;
+    color: #fff;
+}

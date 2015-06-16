@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 04. Windows Calculator</title>
+    <meta charset="utf-8" />
+    <link href="CSS/CalculatorStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <main>
+        <form id="calculator">
+            <div id="mainContainer">
+                <div id="winExplorer">
+                    <label id="title">Calculator</label>
+                </div>
+                <div id="innerContainer">
+                    <section id="options">
+                        <label>View</label>
+                        <label>Edit</label>
+                        <label>Help</label>
+                    </section>
+                    <section id="result">
+                        <div><span>8854455</span></div>
+                    </section>
+                    <section id="weLoveBits">
+                        <div id="firstRow">
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                        </div>
+                        <div id="bitsCountRowOne">
+                            <span>63</span>
+                            <span>47</span>
+                            <span>32</span>
+                        </div>
+                        <div id="secondRow">
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                0000
+                            </span>
+                            <span>
+                                1000
+                            </span>
+                            <span>
+                                0111
+                            </span>
+                            <span>
+                                0001
+                            </span>
+                            <span>
+                                1011
+                            </span>
+                            <span>
+                                1011
+                            </span>
+                            <span>
+                                0111
+                            </span>
+                        </div>
+                        <div id="bitsCountRowTwo">
+                            <span>
+                                31
+                            </span>
+                            <span>
+                                15
+                            </span>
+                            <span>
+                                0
+                            </span>
+                        </div>
+                    </section>
+                    <div class="radioButtonsContainer">
+                        <div>
+                            <input type="radio" id="hex" name="numericSystem" />
+                            <label for="hex">Hex</label>
+                            <input type="radio" id="dec" name="numericSystem" checked="checked" />
+                            <label for="dec">Dec</label>
+                            <input type="radio" id="oct" name="numericSystem" />
+                            <label for="oct">Oct</label>
+                            <input type="radio" id="bin" name="numericSystem" />
+                            <label for="bin">Bin</label>
+                        </div>
+                    </div>
+                    <table border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="button" class="inactive" value="" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive nopadding" value="Mod" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive biggest" value="A" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkestActive" value="MC" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkestActive" value="MR" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkestActive" value="MS" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkestActive" value="M+" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkestActive" value="M-" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="darkerActive" value="(" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value=")" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive biggest" value="B" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive biggest backspace" value="←" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="CE" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="C" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="±" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive" value="√" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="darkerActive nopadding" value="RoL" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive nopadding" value="RoR" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive biggest" value="C" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="7" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="8" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="9" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive"value="/" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive" value="%" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="darkerActive"  value="Or" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive nopadding" value="Xor" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive biggest" value="D" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="4" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="5" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="6" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive biggest" value="*" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive" value="1/&#8339" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="darkerActive" value="Lsh" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="Rsh" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive biggest" value="E" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="1" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="2" />
+                                </td>
+                                <td>
+                                    <input type="button" class="active" value="3" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="-" />
+                                </td>
+                                <td rowspan="2">
+                                    <input type="button" id="equals" class="darkerActive" value="=" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="darkerActive" value="Not" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="And" />
+                                </td>
+                                <td>
+                                    <input type="button" class="inactive biggest" value="F" />
+                                </td>
+                                <td colspan="2">
+                                    <input type="button" id="zero" class="active" value="0" />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="," />
+                                </td>
+                                <td>
+                                    <input type="button" class="darkerActive" value="+" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="radioButtonsContainer">
+                        <div>
+                            <input type="radio" id="qword" name="type" checked="checked" />
+                            <label for="qword">Qword</label>
+                            <input type="radio" id="dword" name="type" />
+                            <label for="dword">Dword</label>
+                            <input type="radio" id="word" name="type" />
+                            <label for="word">Word</label>
+                            <input type="radio" id="byte" name="type" />
+                            <label for="byte">Byte</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

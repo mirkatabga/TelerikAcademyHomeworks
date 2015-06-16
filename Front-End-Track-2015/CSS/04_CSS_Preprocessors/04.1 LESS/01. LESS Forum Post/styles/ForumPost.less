@@ -1,0 +1,192 @@
+﻿body, header, nav, ul, li, form, section, article, aside {
+    margin: 0;
+    padding: 0;
+}
+
+/*.linear-gradient(@from-color,@from-pos,@to-color,@to-pos,@repeat: no-repeat) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+    background-repeat: @repeat;
+}*/
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos,@repeat: no-repeat) {
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    background-repeat: @repeat;
+}
+
+.clearfix() {
+    zoom: 1;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+.float-left() {
+    float: left;
+}
+
+.float-right() {
+    float: right;
+}
+
+
+body {
+    @default-bg-color: #c894f2;
+    @default-font-size: 14px;
+    @default-font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    @default-font-color: #fff;
+    @default-border: 2px solid #000;
+    @default-border-radius: 10px;
+
+    div#wrapper {
+        font-family: @default-font-family;
+        font-size: @default-font-size;
+        color: @default-font-color;
+        height: 100%;
+        .linear-gradient(@default-bg-color,0%,#9215f2,15%);
+
+        & a {
+            text-decoration: none;
+            color: @default-font-color;
+        }
+
+        & ul {
+            list-style-type: none;
+        }
+
+        header {
+            div {
+                &#header-container {
+                    position: relative;
+                }
+
+                &#logo-container {
+                    display: inline-block;
+                }
+
+                &#reg-form-container {
+                    position: absolute;
+                    right: 100px;
+                    top: 20px;
+
+                    & input {
+                        border: @default-border;
+                        border-radius: @default-border-radius;
+                        background-color: #b35ef3;
+                        margin: 10px 0 0 10px;
+                    }
+
+                    & button {
+                        padding: 5px 10px;
+                        color: @default-font-color;
+                        border: 1px;
+                        border-style: outset;
+                        border-radius: @default-border-radius;
+                        background-color: rgba(200, 148, 242, 0.7);
+                    }
+                }
+            }
+
+            nav {
+                margin-left: 50px;
+                border: @default-border;
+                border-radius: @default-border-radius;
+                padding: 5px 10px 5px 10px;
+                width: 65%;
+
+                &ul {
+                }
+
+                & > ul {
+                    font-size: 1.2em;
+
+                    & > li {
+                        display: inline-block;
+                        position: relative;
+                        margin-right: 10px;
+
+                        & > ul {
+                            width: 160px;
+                            font-size: 14px;
+                            background-color: #c389cc;
+                            position: absolute;
+                            display: none;
+
+                            & > li {
+                                padding: 5px 5px 5px 5px;
+                                border-bottom: 1px solid #fff;
+
+                                &:last-of-type {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        &:hover ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        & section#article-container {
+            width: 65%;
+            margin: 20px 50px 0 30px;
+
+            & article {
+                padding: 20px;
+                border: @default-border;
+                border-radius: @default-border-radius;
+                margin-top: 30px;
+
+                & a {
+                    color: #eee;
+                }
+            }
+        }
+
+        & aside {
+            float: right;
+            width: 25%;
+            margin: 50px;
+
+            & > ul > li {
+                border: @default-border;
+                border-radius: @default-border-radius;
+                margin-bottom: 30px;
+                padding: 20px;
+
+                & a {
+                    color: #eee;
+                }
+
+                & ul li::before {
+                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90BCA0LNFA4GiMAAAAdaVRYdENvbW1lbnQAAAAAAENyZWF0ZWQgd2l0aCBHSU1QZC5lBwAAAh9JREFUKM9Nkr1rVFEUxH9z733v7Ye7xKwkAfEDrdVaRFG0EPwAG7GwURC08J/RQiwsBFu1EBtBhDRiqREUG8VAiCTGuNnv9+49FqsxpzrFmTkzw4gdc+7CfeY2s0uV52xryIkQadcmfi+WBAKZjXJWSm+/+7neBez18rx/vvjs1jaH/i1XTz54un/dXayXPs/JSGYgwyyB/p6ZITkwcM5RUjJSrL7N8frDwcn5z0/uoitnHi4sbLqP81u+MwWDmZEsIUuYbKcJZMIknDySpuTyrDXj1vfO5EjYNdK9+a7rJCqMSNAustCins0SXJPct6aqmD4qU5cyDhmW61SxR2k9zBJ7+qHVr/nHodO1y4mEcwWd5jFaxT7y0MYs/lWbtnMxQNoHBpKnjD22ht/5OViiin3mN3UqhEhmZuS+RRHaBF/HSEAipYSZ7YwQKeEkDBFcjVo+QzFuUcUeSlL40eHd4dVwfFCusbzxiiLbTSNboJ7tIQttvCsQ/ywnYhxTxj6jco3B5AejagOzROZyVmbi17BZize7jfC+PcxyU2ISu4yrX2z0E6aEYTgCkiPaGOGQCTmP8Dg5nAL9wuLqbHVDAGcu3z9yeCV7Mffb7y8sSIJkU7tJCZm2SyYTTgJNiceqbL0ZVz/ttWuLL28vamclrpx+eDSPut6Y2PnGgANFpUZzovA/Q2OQWxwHhoM6y72avYneniwd4u2XR3cA+AN6iQt1xYT78wAAAABJRU5ErkJggg==') /*../images/li-dot.png*/ no-repeat;
+                    content: "";
+                    width: 27px;
+                    height: 13px;
+                    padding: 0 0 0 25px;
+                }
+
+                & ul li {
+                    margin: 0 0 10px 20px;
+                }
+            }
+        }
+
+        footer {
+            text-align: center;
+        }
+    }
+}

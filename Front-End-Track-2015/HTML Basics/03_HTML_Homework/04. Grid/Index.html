@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Grid</title>
+    <link href="CSS/GridStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form method="post" action="action_form.aspx">
+        <table class="Grid" cellpadding="4" cellspacing="0" border="0">
+            <colgroup>
+                <col style="width:8%" />
+                <col style="width:28%"/>
+                <col style="width:18%"/>
+                <col style="width:18%" />
+                <col style="width:18%" />
+                <col style="width:8%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <td colspan="6">Drag a column header and drop it here to group by that column</td>
+                </tr>
+                <tr id="gradient-top-bot">
+                    <th>
+                        Product ID
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                        Unit price
+                    </th>
+                    <th>
+                        Quantity per unit
+                    </th>
+                    <th>
+                        Units in stock
+                    </th>
+                    <th>
+                        Discontinued
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="productID-input" pattern="[0-9]" required />
+                    </td>
+                    <td>
+                        <input type="text" id="productName-input"/>
+                    </td>
+                    <td>
+                        <input type="text" id="price-input" />
+                        <input type="button" value="Y" />
+                    </td>
+                    <td>
+                        <input type="text" id="quantity-input" />
+                    </td>
+                    <td>
+                        <input type="text" id="units-input" />
+                        <input type="button" name="units" value="Y" />
+                    </td>
+                    <td>
+                        <input type="checkbox" />
+                        <input type="button" value="Y" />
+                    </td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="6">
+                        <input type="button" value="<<" />
+                        <input type="button" id="margin-left" value="<" />
+                        <a href="Index.html#1" id="a-border">1</a>
+                        <a href="Index.html#2">2</a>
+                        <a href="Index.html#3">3</a>
+                        <a href="Index.html#3">4</a>
+                        <a href="Index.html#3">5</a>
+                        <a href="Index.html#3">6</a>
+                        <a href="Index.html#3">7</a>
+                        <a href="Index.html#3">8</a>
+                        <a href="Index.html#3">9</a>
+                        <a href="Index.html#3">10</a> &nbsp;
+                        <span>...</span>
+                        <input type="button" value=">" />
+                        <input type="button" value=">>" />
+                        <span style="margin-left:10px;">Page size:</span>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option selected="selected">10</option>
+                        </select>
+                        <span style="float:right; margin-top:5px;">35104 items in 33511 pages</span>
+                    </td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Chang</td>
+                    <td>$19.00</td>
+                    <td>24-12 oz bottles</td>
+                    <td>17</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Chang</td>
+                    <td>$19.00</td>
+                    <td>24-12 oz bottles</td>
+                    <td>17</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Chang</td>
+                    <td>$19.00</td>
+                    <td>24-12 oz bottles</td>
+                    <td>17</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Chang</td>
+                    <td>$19.00</td>
+                    <td>24-12 oz bottles</td>
+                    <td>17</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Chai</td>
+                    <td>$18.00</td>
+                    <td>10 boxes x 20 bags</td>
+                    <td>39</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Chang</td>
+                    <td>$19.00</td>
+                    <td>24-12 oz bottles</td>
+                    <td>17</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

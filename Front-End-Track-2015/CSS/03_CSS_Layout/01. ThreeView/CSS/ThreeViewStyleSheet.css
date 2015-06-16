@@ -1,0 +1,38 @@
+﻿body {
+    font-size: 12px;
+}
+
+ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+ul.mainList,ul.sublist {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+ul.mainList > li > a{
+    color:#000;
+}
+
+ul li:hover > ul.sublist{
+    display:block;
+}
+
+ul.sublist {
+    display:none;
+    margin-left: 15px;
+}
+
+ul.sublist > li > a{
+    color: #888888;
+}

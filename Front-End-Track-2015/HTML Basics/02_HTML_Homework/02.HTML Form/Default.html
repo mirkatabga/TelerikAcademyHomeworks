@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML Form</title>
+    <style>
+        label{
+          display: inline-block;
+          float: left;
+          clear: left;
+          width: 130px;
+          text-align: left;
+          font-weight:700;
+        }
+
+        input {
+          display: inline-block;
+          float: left;
+        }
+
+        #submit{
+            float:left
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="form.aspx" name="MemberDetails">
+        <label for="memberName">Member name:</label>
+        <input type="text" id="memberName" name="memName" required /> <b>*req</b> <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="emailField" required /> <b>*req</b><br /><br />
+        
+        <label for="school">School:</label>
+        <input type="text" name="schoolField" id="school" required /> <b>*req</b> <br /><br />
+
+        <input id="submit" type="image" src="Images/submit.gif" />
+    </form>
+</body>
+</html>

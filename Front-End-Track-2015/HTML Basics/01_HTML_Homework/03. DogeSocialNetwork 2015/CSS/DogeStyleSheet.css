@@ -1,0 +1,22 @@
+﻿body {
+    background-color: #add8e6
+}
+
+figure{
+    padding:0px;
+    margin:0px;
+    width:30%;
+}
+
+#profileInfoContainer{
+    width:200px;
+}
+
+#profileInfoGroup{
+    margin-bottom:4px;
+}
+
+img{
+    border:solid;
+    border-width:1px;
+}

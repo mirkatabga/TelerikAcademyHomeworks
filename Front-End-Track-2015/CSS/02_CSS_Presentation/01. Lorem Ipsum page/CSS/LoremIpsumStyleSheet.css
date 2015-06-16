@@ -1,0 +1,27 @@
+﻿body {
+
+    font-size: 16px;
+    color: #74b9ff;
+}
+
+section{
+    width: 50%;
+}
+
+section article p::first-line{
+   font-weight: bold;
+}
+
+section article p{
+    font-size: 1.2em;
+}
+
+@font-face{
+    font-family:'Parisienne';
+    src: url(http://fonts.gstatic.com/s/parisienne/v4/1wiHF6pWOa568Cj3p-anxPk_vArhqVIZ0nv9q090hN8.woff2)
+}
+
+section article p::first-letter{
+    font-family: 'Parisienne', cursive;
+    font-size: 2.0em;
+}

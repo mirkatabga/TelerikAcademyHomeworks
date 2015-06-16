@@ -1,0 +1,131 @@
+﻿body {
+    @img1: url('../images/Mercedes GLA.jpg') no-repeat 0 0;
+    @img2: url(../images/overland-grand-cherokee.jpg) no-repeat 0 0;
+    @img3: url(../images/wald-international-toyota-land-cruiser-001_100197542_m.jpg) no-repeat 0 0;
+    @img4: url(../images/2013-Volkswagen-Touareg-SUV_Image-013.jpg) no-repeat 0 0;
+    @img5: url(../images/q7.jpg) no-repeat 0 0;
+    @img6: url(../images/2015-opel-mokka-01.jpg) no-repeat 0 0;
+
+    .label-item-like-image(@image) {
+        background: @image;
+        width: 80px;
+        height: 78px;
+        display: inline-block;
+        margin: 10px;
+        background-size: 80px 78px;
+    }
+
+    div#wrapper {
+        width: 60%;
+        margin: 0 auto;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        div#gallery {
+            width: 650px;
+            margin: 0 auto;
+        }
+
+        div#zoomed {
+            width: 650px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        label[for=rad1] {
+            .label-item-like-image(@img1);
+        }
+
+        label[for=rad2] {
+            .label-item-like-image(@img2);
+        }
+
+        label[for=rad3] {
+            .label-item-like-image(@img3);
+        }
+
+        label[for=rad4] {
+            .label-item-like-image(@img4);
+        }
+
+        label[for=rad5] {
+            .label-item-like-image(@img5);
+        }
+
+        label[for=rad6] {
+            .label-item-like-image(@img6);
+        }
+
+        input[type=radio] {
+            width: 600px;
+            height: 400px;
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+        }
+
+        input[type=radio]:checked {
+            visibility: visible;
+            z-index: 0;
+        }
+
+        input[type=radio]#rad1:checked::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: @img1;
+            background-size: 100% 100%;
+        }
+
+        input[type=radio]#rad2:checked::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: @img2;
+            background-size: 100% 100%;
+        }
+
+        input[type=radio]#rad3:checked::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: @img3;
+            background-size: 100% 100%;
+        }
+
+        input[type=radio]#rad4:checked::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: @img4;
+            background-size: 100% 100%;
+        }
+
+        input[type=radio]#rad5:checked::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: @img5;
+            background-size: 100% 100%;
+        }
+
+        input[type=radio]#rad6:checked::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: @img6;
+            background-size: 100% 100%;
+        }
+    }
+}
