@@ -1,4 +1,5 @@
-﻿(function () {
+﻿//Problem. 06
+(function () {
     var people = [['Peter', 'Petrov', 20, false], ['Ivan', 'Ivanov', 20, false], ['Mariika', 'Demireva', 18, true],
                   ['Georgi', 'Nikolov', 21, false], ['Ivana', 'Stoyanova', 16, true], ['Pavlina', 'Momchilova', 21, true],
                   ['Alexander', 'Petrov', 21, false], ['Stoyan', 'Hristov', 19, false], ['Teodora', 'Chavdarova', 21, true],
