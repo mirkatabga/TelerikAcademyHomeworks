@@ -1,2 +1,2 @@
 # TelerikAcademyHomeworks
-Here you can find all mine solutions for Telerik Academy's homeworks.
+All telerik homeworks that I have done.
