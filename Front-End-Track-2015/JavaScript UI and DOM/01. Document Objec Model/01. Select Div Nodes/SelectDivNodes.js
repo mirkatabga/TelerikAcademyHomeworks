@@ -47,7 +47,7 @@
 		divsFromTagName = byTagName();
 
 	NodeList.prototype.outputElements.call(divsFromQuerySelector);
-	console.log('------------------------------------------------');
+	console.log('-------------------------------------------------');
 	NodeList.prototype.outputElements.call(divsFromTagName);
 } ())
 
