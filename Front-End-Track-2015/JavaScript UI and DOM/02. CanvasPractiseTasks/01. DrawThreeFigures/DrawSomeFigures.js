@@ -66,7 +66,7 @@
             ctx.arc(sp.x + 50, (1 / 0.5) * sp.y + 190, 50, 0, convertToRadians(180));
             ctx.restore();
             ctx.lineTo(sp.x, sp.y);
-            
+
             //the down part of the hat
             ctx.save();
             ctx.moveTo(sp.x + 100, sp.y + 100);
@@ -96,7 +96,7 @@
                 ctx.save();
 
                 ctx.scale(1, 0.8);
-                ctx.arc(center.x, (1/0.8) * center.y, 18, 0, convertToRadians(360));
+                ctx.arc(center.x, (1 / 0.8) * center.y, 18, 0, convertToRadians(360));
                 ctx.restore();
 
                 ctx.fill();
@@ -110,7 +110,7 @@
                 ctx.save();
                 ctx.beginPath();
 
-                ctx.moveTo(sp.x,sp.y);
+                ctx.moveTo(sp.x, sp.y);
                 ctx.lineTo(sp.x - 12, sp.y + 35);
                 ctx.lineTo(sp.x, sp.y + 35);
                 ctx.stroke();
@@ -122,7 +122,7 @@
 
                 ctx.beginPath();
 
-                ctx.translate(center.x-10, center.y-10);
+                ctx.translate(center.x - 10, center.y - 10);
                 ctx.rotate(convertToRadians(10));
                 ctx.scale(1, 0.3);
                 ctx.arc(0, (1 / 0.3) * (0), 40, 0, 2 * Math.PI);
@@ -168,12 +168,23 @@
         drawHat(ctx, sp, fillColor, borderWidth, borderColor);
     }
 
-    var ctx = document.getElementById("the-canvas").getContext('2d'),
-        headStartingPoint = createPoint(100, 50);
+    var canvas = document.getElementById("the-canvas"),
+        ctx = canvas.getContext('2d');
 
-    drawHeadFigure(ctx, headStartingPoint);
-    drawHeadFigure(ctx, createPoint(310, 50));
-    drawHeadFigure(ctx, createPoint(520, 50));
+    var headStartingPoint = createPoint(0, 50),
+     step = 0;
 
+    console.log(canvas.width);
+    function anim() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        headStartingPoint.x = step;
+        drawHeadFigure(ctx, headStartingPoint);
+        step += 2;
 
+        if (step < canvas.width) {
+            requestAnimationFrame(anim);
+        }
+    }
+
+    anim();
 }());
