@@ -43,14 +43,13 @@
         return deg * (Math.PI / 180);
     }
 
-    function drawHeadFigure(ctx) {
+    function drawHeadFigure(ctx, sp) {
 
-        function drawHat(sp, fillColor, borderWidth, borderColor) {
+        function drawHat(ctx, sp, fillColor, borderWidth, borderColor) {
 
             ctx.fillStyle = fillColor;
             ctx.strokeStyle = borderColor;
             ctx.lineWidth = borderWidth;
-
 
             ctx.beginPath();
             ctx.save();
@@ -79,24 +78,102 @@
             ctx.stroke();
         }
 
-        function drawFace() {
+        function drawFace(ctx, center, radius, fillColor, borderColor, borderWidth) {
 
+            function drawEye(center) {
+
+                function drawEyeBall(center) {
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.fillStyle = ctx.strokeStyle;
+                    ctx.scale(0.7, 1);
+                    ctx.arc((1 / 0.7) * center.x, center.y, 10, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.restore();
+                }
+
+                ctx.beginPath();
+                ctx.save();
+
+                ctx.scale(1, 0.8);
+                ctx.arc(center.x, (1/0.8) * center.y, 18, 0, convertToRadians(360));
+                ctx.restore();
+
+                ctx.fill();
+                ctx.stroke();
+
+                drawEyeBall(createPoint(center.x - 8, center.y));
+
+            }
+
+            function drawNose(sp) {
+                ctx.save();
+                ctx.beginPath();
+
+                ctx.moveTo(sp.x,sp.y);
+                ctx.lineTo(sp.x - 12, sp.y + 35);
+                ctx.lineTo(sp.x, sp.y + 35);
+                ctx.stroke();
+                ctx.restore();
+            }
+
+            function drawMouth(center) {
+                //ctx.save();
+
+                ctx.beginPath();
+
+                ctx.translate(center.x-10, center.y-10);
+                ctx.rotate(convertToRadians(10));
+                ctx.scale(1, 0.3);
+                ctx.arc(0, (1 / 0.3) * (0), 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.restore();
+            }
+
+            ctx.beginPath();
+            ctx.fillStyle = fillColor;
+            ctx.strokeStyle = borderColor;
+            ctx.lineWidth = borderWidth;
+
+            ctx.save();
+            ctx.scale(1, 0.8);
+            ctx.arc(center.x, (1 / 0.8) * center.y, radius, convertToRadians(315), convertToRadians(225));
+            ctx.restore();
+            ctx.fill();
+            ctx.stroke();
+
+            //Eyes
+            var eyeCenter = createPoint(center.x - 55, (1 / 0.8) * center.y - 80);
+
+            drawEye(eyeCenter);
+            drawEye(createPoint(center.x + 30, (1 / 0.8) * center.y - 80));
+
+            //Nose
+            drawNose(createPoint(center.x - 10, (1 / 0.8) * center.y - 80));
+
+            //Mouth
+            drawMouth(createPoint(center.x - 10, (1 / 0.8) * center.y - 10))
         }
+
         ctx.save();
 
-        var sp = createPoint(100, 50),
-            fillColor = '#396693',
+        var fillColor = '#396693',
             borderColor = '#000',
-            borderWidth = 3;
+            borderWidth = 3,
+            faceCenter = createPoint(sp.x + 50, sp.y + 182);
 
 
-
-        drawHat(sp, fillColor, borderWidth, borderColor);
+        drawFace(ctx, faceCenter, 100, '#90CAD7', '#346772', 3);
+        drawHat(ctx, sp, fillColor, borderWidth, borderColor);
     }
 
-    var ctx = document.getElementById("the-canvas").getContext('2d');
+    var ctx = document.getElementById("the-canvas").getContext('2d'),
+        headStartingPoint = createPoint(100, 50);
 
-    drawHeadFigure(ctx);
+    drawHeadFigure(ctx, headStartingPoint);
+    drawHeadFigure(ctx, createPoint(310, 50));
+    drawHeadFigure(ctx, createPoint(520, 50));
 
 
 }());
