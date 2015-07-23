@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40418.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. DrawThreeFigures", "01. DrawThreeFigures\01. DrawThreeFigures.csproj", "{FE779B2B-9FF8-4CD8-A6C3-2E2B65D8D4E3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Flying circle", "02. Flying circle\02. Flying circle.csproj", "{D4A7A9D6-9328-409F-A236-E527B0ABC671}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{FE779B2B-9FF8-4CD8-A6C3-2E2B65D8D4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE779B2B-9FF8-4CD8-A6C3-2E2B65D8D4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE779B2B-9FF8-4CD8-A6C3-2E2B65D8D4E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4A7A9D6-9328-409F-A236-E527B0ABC671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4A7A9D6-9328-409F-A236-E527B0ABC671}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4A7A9D6-9328-409F-A236-E527B0ABC671}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4A7A9D6-9328-409F-A236-E527B0ABC671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
