@@ -53,29 +53,29 @@
     }
 
     function animationFrame() {
-        times += 1;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         switch (currentDirection) {
             case 'up-right': {
-                center.x += 1;
-                center.y -= 1;
+                center.x += 10 - hits;
+                center.y -= 10 - hits;
             } break;
             case 'down-right': {
-                center.x += 1;
-                center.y += 1;
+                center.x += 10 - hits;
+                center.y += 10 - hits;
             } break;
             case 'down-left': {
-                center.x -= 1;
-                center.y += 1;
+                center.x -= 10 - hits;
+                center.y += 10;
             } break;
             case 'up-left': {
-                center.x -= 1;
-                center.y -= 1;
+                center.x -= 10;
+                center.y -= 10;
             } break;
         }
 
         if (center.x + radius === canvas.width || center.x - radius === 0
             || center.y + radius === canvas.height || center.y - radius === 0) {
+            hits += 1;
             switch (currentDirection) {
                 case 'up-right': {
                     if (center.x + radius === canvas.width) {
@@ -120,11 +120,11 @@
     var canvas = document.getElementById('the-canvas'),
         ctx = canvas.getContext('2d');
 
-    var directions = ['up-right', 'down-right', 'down-left', 'up-left'],
+    var directions = ['up-right', 'down-right', 'up-left'],
         currentDirection,
         radius = 10,
         center = createPoint(0 + radius, getRandomInt(0 + radius, canvas.height - radius)),
-        times = 0;
+        hits = 0;
 
     currentDirection = directions[getRandomInt(0, directions.length - 1)];
 
