@@ -56,63 +56,82 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         switch (currentDirection) {
             case 'up-right': {
-                center.x += 10 - hits;
-                center.y -= 10 - hits;
+                center.x += (speed - hits / 2);
+                center.y -= (speed - hits / 2);
             } break;
             case 'down-right': {
-                center.x += 10 - hits;
-                center.y += 10 - hits;
+                center.x += (speed - hits / 2);
+                center.y += (speed - hits / 2);
             } break;
             case 'down-left': {
-                center.x -= 10 - hits;
-                center.y += 10;
+                center.x -= (speed - hits / 2);
+                center.y += (speed - hits / 2);
             } break;
             case 'up-left': {
-                center.x -= 10;
-                center.y -= 10;
+                center.x -= (speed - hits / 2);
+                center.y -= (speed - hits / 2);
             } break;
         }
 
-        if (center.x + radius === canvas.width || center.x - radius === 0
-            || center.y + radius === canvas.height || center.y - radius === 0) {
+        if (center.x + radius > canvas.width) {
+            center.x = canvas.width - radius;
+        }
+        else if (center.x - radius < 0) {
+            center.x = 0 + radius;
+        }
+
+        if (center.y + radius > canvas.height) {
+            center.y = canvas.height - radius;
+        }
+        else if (center.y - radius < 0) {
+            center.y = 0 + radius;
+        }
+
+        if (center.x + radius >= canvas.width || center.x - radius <= 0
+            || center.y + radius >= canvas.height || center.y - radius <= 0) {
             hits += 1;
+
             switch (currentDirection) {
                 case 'up-right': {
-                    if (center.x + radius === canvas.width) {
+                    if (center.x + radius >= canvas.width) {
                         currentDirection = 'up-left';
                     }
-                    else if (center.y - radius === 0) {
+                    else if (center.y - radius <= 0) {
                         currentDirection = 'down-right';
                     }
                 } break;
                 case 'down-right': {
-                    if (center.x + radius === canvas.width) {
+                    if (center.x + radius >= canvas.width) {
                         currentDirection = 'down-left';
                     }
-                    else if (center.y + radius === canvas.height) {
+                    else if (center.y + radius >= canvas.height) {
                         currentDirection = 'up-right';
                     }
                 } break;
                 case 'down-left': {
-                    if (center.x - radius === 0) {
+                    if (center.x - radius <= 0) {
                         currentDirection = 'down-right';
                     }
-                    else if (center.y + radius === canvas.height) {
+                    else if (center.y + radius >= canvas.height) {
                         currentDirection = 'up-left';
                     }
                 } break;
                 case 'up-left': {
-                    if (center.x - radius === 0) {
+                    if (center.x - radius <= 0) {
                         currentDirection = 'up-right';
                     }
-                    else if (center.y - radius === 0) {
+                    else if (center.y - radius <= 0) {
                         currentDirection = 'down-left';
                     }
                 } break;
             }
         }
 
+
         drawCircle(ctx, center, 10);
+        if (hits / 2 === speed) {
+            return 0;
+        }
         requestAnimationFrame(animationFrame);
     }
 
@@ -124,7 +143,8 @@
         currentDirection,
         radius = 10,
         center = createPoint(0 + radius, getRandomInt(0 + radius, canvas.height - radius)),
-        hits = 0;
+        hits = 0,
+        speed = 20;
 
     currentDirection = directions[getRandomInt(0, directions.length - 1)];
 
