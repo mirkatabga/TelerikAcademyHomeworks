@@ -241,7 +241,7 @@
         ctx = canvas.getContext('2d');
 
     var snake = [],
-        framesToSkip = 5,
+        framesToSkip = 3,
         food,
         counter = 0,
         direction = 'right',
