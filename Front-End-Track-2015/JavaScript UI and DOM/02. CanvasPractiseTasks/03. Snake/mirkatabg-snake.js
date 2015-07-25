@@ -75,6 +75,8 @@
     }
 
     document.onkeydown = function (key) {
+        pressedKeys.push(key.keyCode);
+
         switch (key.keyCode) {
             case 38: {
                 if (direction !== 'down') {
@@ -162,6 +164,14 @@
             } break;
             case 'left': {
                 if (head.x - side >= 0) {
+                    if (actualDirection === 'right') {
+                        var previewsKeyCode = pressedKeys[pressedKeys.length - 2];
+                        if (previewsKeyCode === 40) {
+                            direction = 'down';
+                            isPreviews = true;
+                            return updateHeadPosition(index);
+                        }
+                    }
                     snake.forEach(function (part, i) {
                         if (head.x - side === part.x && head.y === part.y && i !== index) {
                             isValid = false;
@@ -193,6 +203,9 @@
             return;
         }
 
+        counter = 0;
+        window.requestAnimationFrame(animationFrame);
+
         var lastIndex = snake.length - 1;
         ctx.clearRect(0, 0, boxWidth, boxHeight);
 
@@ -217,11 +230,11 @@
 
         drawScore(score);
         drawSnake(snake);
+        actualDirection = direction;
         drawFood(food);
 
 
-        counter = 0;
-        window.requestAnimationFrame(animationFrame);
+
     }
 
     var canvas = document.getElementById('snake-box'),
@@ -238,7 +251,12 @@
         fillColor = '#0000ff',
         strokeColor = '#fff',
         score = 0,
-        id;
+        id,
+        actualDirection = 'right',
+        pressedKeys = [],
+        isPreviews = false;
+
+    console.log(actualDirection);
 
     ctx.fillStyle = fillColor;
     ctx.strokeStyle = strokeColor;
