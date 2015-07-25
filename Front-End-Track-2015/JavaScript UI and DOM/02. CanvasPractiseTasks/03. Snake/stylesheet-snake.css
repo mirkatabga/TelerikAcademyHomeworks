@@ -1,0 +1,31 @@
+﻿html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body{
+        background-image: linear-gradient(10deg,#000000 80%,#d4d4d4);
+}
+
+#wrapper {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #d4d4d4;
+    border-width: 0 2px;
+    border-color:#8f0000;
+    border-style:solid;
+}
+
+canvas{
+    margin: 100px 100px;
+    padding:0;
+    background-color:#fff;
+    border:1px solid #000;
+}
+
+#score-container span{
+    font-size:23px;
+    font-family:'Times New Roman', Times, serif;
+}
