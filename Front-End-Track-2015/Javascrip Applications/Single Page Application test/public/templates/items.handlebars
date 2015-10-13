@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    {{#if items}}
+      {{#items}}
+        <a class="col-md-4" href="#/item{{id}}">See {{name}}</a>
+      {{/items}}
+    {{else}}
+    <div class="row">
+      <h2 class="col-md-12">No items!</h2>
+    </div>
+    {{/if}}
+    <div class="row">
+      <a class = "btn btn-default" href="#/items/new">New</a>
+    </div>
+  </div>
+</div>

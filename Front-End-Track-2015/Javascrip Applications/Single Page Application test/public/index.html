@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>SPA with sammy jquery and ...</title>
+	<meta charset="UTF-8">
+	<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/bower_components/toastr/toastr.css" rel="stylesheet"/>
+    <style>
+        .no-bullet{
+            list-style-type: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a href="#/home" class="navbar-brand">SPA with sammy.js</a>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/home">Home</a>
+                </li>
+                <li>
+                    <a href="#/items">Items</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   <div id="content" class="container"></div>
+   
+   <!--libs-->
+   <script src="/bower_components/jquery/dist/jquery.js"></script>
+   <script src="/bower_components/sammy/lib/sammy.js"></script>
+   <script src="/bower_components/handlebars/handlebars.js"></script>
+   <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="/bower_components/toastr/toastr.js"></script>
+   
+   <!--my libs-->
+   <script src="/app/db.js"></script>
+   <script src="app/templates.js"></script>
+   <script src="/app/routes.js"></script>
+   
+</body>
+</html>
